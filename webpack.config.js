@@ -21,6 +21,10 @@ module.exports = {
 				loader: 'source-map-loader',
 			},
 			{
+				test:/\.css$/,
+				use:['style-loader', 'css-loader']
+			},
+			{
 				test: /\.scss$/,
 				use: [
 					MiniCssExtraPlugin.loader,
